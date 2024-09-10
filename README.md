@@ -15,8 +15,13 @@ This project involves analyzing Airbnb data for New York City to uncover trends 
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
 - Step 4 : Handled empty cells and errors, and cleaned the data.
-- Step 6 : In the report view, under the view tab, theme was selected.
-- Step 7 : Began developing charts to uncover valuable insights
+- Step 5 : A calculated column was created to show the duration of room listings in months
+
+for creating new column following DAX expression was written;
+       
+        Age_of_room(in months) = Table1[number_of_reviews]/Table1[reviews_per_month]
+- Step 7 : In the report view, under the view tab, theme was selected.
+- Step 8 : Began developing charts to uncover valuable insights
 
 ## Report Snapshot (Power BI DESKTOP)
 
